@@ -219,6 +219,18 @@
             }
         }
     </style>
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({
+    initialMessages: [
+		'Hi there! 👋',
+		'My name is Snowy. How can I assist you today?'
+	],
+		webhookUrl: 'https://n8n.clive.li/webhook/de59864f-b1de-4123-9f09-904ce4029df3/chat'
+	});
+</script>
 </head>
 <body>
 
@@ -337,6 +349,8 @@
             }
         });
     </script>
+
+    
 
 </body>
 </html>
